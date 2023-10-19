@@ -14,7 +14,7 @@
 
         Layer3ii {
             bindings = <&lt 3 ESCAPE>;
-            key-positions = <41>;
+            key-positions = <41 40>;
             layers = <3>;
         };
     };
@@ -37,7 +37,7 @@
             >;
         };
 
-        lower_layer {
+        Numbers {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -45,14 +45,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1    &kp UP_ARROW  &kp N3           &kp N4  &kp N5       &kp N7        &kp N8        &kp N9        &kp LPAR   &kp LPAR  &kp BSPC
+&kp TAB    &kp HOME  &kp UP_ARROW  &kp END          &kp N4  &kp N5       &kp N7        &kp N8        &kp N9        &kp LPAR   &kp LPAR  &kp BSPC
 &trans     &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &trans  &trans       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT  &trans    &trans
 &kp LSHFT  &trans    &trans        &trans           &trans  &trans       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans    &trans
-                                   &kp LGUI         &trans  &kp SPACE    &kp RET       &kp N0        &mo 2
+                                   &kp LGUI         &trans  &kp SPACE    &kp RET       &kp N0        &kp LCMD
             >;
         };
 
-        raise_layer {
+        Symbols {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -67,12 +67,21 @@
             >;
         };
 
-        layer_3 {
+        Functions {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans  &trans  &trans    &trans  &trans  &trans
+&kp F1        &kp F2        &kp F3        &kp F4            &kp F5  &kp F6               &kp F7           &kp F8            &kp F9      &kp F10  &kp F11  &kp F12
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans            &trans  &trans               &kp K_PREV       &kp K_PLAY_PAUSE  &kp K_NEXT  &trans   &trans   &trans
+&kp LSHIFT    &trans        &trans        &trans            &trans  &trans               &trans           &trans            &trans      &trans   &trans   &trans
+                                          &kp LEFT_COMMAND  &to 0   &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &to 0             &to 0
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
     };

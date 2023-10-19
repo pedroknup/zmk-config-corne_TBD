@@ -15,7 +15,7 @@
         Layer3ii {
             bindings = <&lt 4 ESCAPE>;
             key-positions = <41 40>;
-            layers = <4>;
+            layers = <0>;
         };
     };
 

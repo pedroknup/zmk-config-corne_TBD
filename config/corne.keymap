@@ -44,10 +44,10 @@
 
         CMDarrow {
             bindings = <
-&trans  &trans  &trans  &trans    &trans  &trans            &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans  &trans            &trans           &trans  &trans  &trans  &trans  &kp HOME
-&trans  &trans  &trans  &trans    &trans  &trans            &trans           &trans  &trans  &trans  &trans  &kp END
-                        &kp LGUI  &trans  &kp LEFT_ARROW    &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans    &trans            &trans                &trans               &trans              &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans            &trans                &trans               &trans              &trans  &trans  &trans  &kp HOME
+&trans  &trans  &trans  &trans    &trans            &trans                &trans               &trans              &trans  &trans  &trans  &kp END
+                        &kp LGUI  &kp LG(UP_ARROW)  &kp LG(LEFT_ARROW)    &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &trans
             >;
         };
 

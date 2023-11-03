@@ -23,6 +23,12 @@
             key-positions = <41 35>;
             timeout-ms = <50>;
         };
+
+        combo_space {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <38 39>;
+            timeout-ms = <40>;
+        };
     };
 
     keymap {
